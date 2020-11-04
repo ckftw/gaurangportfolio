@@ -396,6 +396,10 @@ section .title::after {
   margin-bottom: 10px;
 }
 
+.contact .contact-content p {
+  color: #afbabd;
+}
+
 .contact .contact-content .left p {
   text-align: justify;
 }
