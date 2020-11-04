@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
 NAVBAR STYLING--------------------
 */
@@ -121,7 +125,8 @@ Home--------------------------
 .about,
 .projects,
 .skills,
-.contact {
+.contact,
+footer {
   font-family: "Poppins", sans-serif;
 }
 
@@ -378,6 +383,7 @@ section .title::after {
   color: #fff;
   background: #111;
 }
+
 .contact .title::after {
   content: "get in touch";
   background: #111;
@@ -390,13 +396,14 @@ section .title::after {
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
+
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.contact .contact-content p {
+.contact .contact-content .left p {
   color: #afbabd;
 }
 
@@ -407,6 +414,7 @@ section .title::after {
 .contact .contact-content .left .icons {
   margin: 10px 0;
 }
+
 .contact .contact-content .row {
   display: flex;
   height: 65px;
@@ -487,6 +495,25 @@ section .title::after {
 .contact .right form .button button:hover {
   color: #3fa6b7;
   background: none;
+}
+
+/*
+------------------------------- FOOTER SECTION ---------------------------------
+*/
+
+footer {
+  background: #01162f;
+  padding: 20px 23px;
+  color: #fff;
+}
+
+footer span a {
+  color: #3fa6b7;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
 }
 
 /*
