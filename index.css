@@ -12,13 +12,14 @@ html {
 }
 
 /*
-NAVBAR STYLING--------------------
+--------------------------------NAVBAR STYLING-----------------------------
 */
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
+
 .navbar {
   background: #01162f;
   position: fixed;
@@ -26,7 +27,14 @@ NAVBAR STYLING--------------------
   font-family: "Ubuntu", sans-serif;
   padding: 30px 0;
   z-index: 999;
+  transition: all 0.3s ease;
 }
+
+.navbar.sticky {
+  padding: 15px 0;
+  background: #01162f;
+}
+
 .navbar .logo a {
   font-size: 35px;
   font-weight: 600;
@@ -36,6 +44,7 @@ NAVBAR STYLING--------------------
 .navbar .logo a span {
   color: #01162f;
 }
+
 .navbar .menu li a {
   color: #fff;
   font-size: 18px;
@@ -54,23 +63,22 @@ NAVBAR STYLING--------------------
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar .menu li a:hover {
   color: crimson;
 }
 
 /*
-----MENU BUTTON STYLE
+---------------------------MENU BUTTON STYLE----------------------
 */
-
 .menu-btn {
   color: #fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
-
 /*
-Home--------------------------
+------------------------------Home--------------------------
 */
 .home {
   display: flex;
@@ -540,6 +548,7 @@ footer span a:hover {
   .max-width {
     padding: 0 50px;
   }
+
   .projects .proj-content .card {
     width: calc(50% - 20px);
     margin-bottom: 20px;
@@ -626,6 +635,41 @@ footer span a:hover {
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #01162f;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
   }
 }
 
