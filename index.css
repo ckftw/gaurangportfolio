@@ -255,7 +255,7 @@ section .title::after {
 }
 
 .projects .title::after {
-  content: "what I developed";
+  content: "what I made";
   background: #111;
 }
 
