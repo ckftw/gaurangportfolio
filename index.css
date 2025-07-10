@@ -291,6 +291,10 @@ section .title::after {
   margin: 10px 0 7px 0;
 }
 
+.projects .proj-content .card .text a {
+  text-decoration: none;
+}
+
 .projects .proj-content .card .box {
   transition: all 0.3s ease;
 }
