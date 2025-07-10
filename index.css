@@ -291,7 +291,7 @@ section .title::after {
   margin: 10px 0 7px 0;
 }
 
-.projects .proj-content .card .text a {
+.projects .proj-content a {
   text-decoration: none;
   color: inherit;
   display: block;
